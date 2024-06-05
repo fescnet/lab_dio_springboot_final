@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: lab_dio_springboot_final
+  datasource:
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+security:
+  config:
+    key: 6447080ad3854e6f9060d0df906f4c9d6447080ad3854e6f9060d0df906f4c9d6447080ad3854e6f9060d0df906f4c9d
+    expiration: 36000000
+    prefix: Bearer
